@@ -62,7 +62,6 @@ public class GelfAppender extends AppenderBase<ILoggingEvent> {
         } catch (RuntimeException e) {
             System.out.println(getStringStackTrace(e));
             this.addError("Error occurred: ", e);
-            throw e;
         }
     }
 
